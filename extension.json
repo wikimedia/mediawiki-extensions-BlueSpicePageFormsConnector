@@ -1,0 +1,40 @@
+{
+	"name": "BlueSpicePageFormsConnector",
+	"license-name": "GPL-3.0-only",
+	"version": "3.3.0-alpha",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePageFormsConnector",
+	"author": "Dejan Savuljesku",
+	"descriptionmsg": "bs-pageformsconnector-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 3.3"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpicePageFormsConnector": {
+					"className": "\\BlueSpice\\PageFormsConnector\\Extension",
+					"extPath": "/BlueSpicePageFormsConnector"
+				}
+			}
+		},
+		"BlueSpiceSaferEdit": {
+			"EnvironmentCheckers": {
+				"formedit": "\\BlueSpice\\PageFormsConnector\\SaferEdit\\EnvironmentChecker\\FormEdit::factory"
+			}
+		}
+	},
+	"MessagesDirs": {
+		"BlueSpicePageFormsConnector": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\PageFormsConnector\\" : "src/"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}
