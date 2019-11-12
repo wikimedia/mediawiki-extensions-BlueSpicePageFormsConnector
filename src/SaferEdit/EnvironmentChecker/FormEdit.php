@@ -40,7 +40,7 @@ class FormEdit extends Base {
 		}
 		if ( $title->isSpecialPage() ) {
 			$dbKey = $title->getDBkey();
-			$bits =  explode( '/', $dbKey );
+			$bits = explode( '/', $dbKey );
 			$specialPageName = array_shift( $bits );
 			if ( $specialPageName ) {
 				$specialTitle = SpecialPageFactory::getTitleForAlias( $specialPageName );
@@ -61,7 +61,7 @@ class FormEdit extends Base {
 	/**
 	 * Modify Title object that is being edited
 	 *
-	 * @param Title $title
+	 * @param Title &$title
 	 * @return bool
 	 */
 	public function getEditedTitle( &$title ) {
