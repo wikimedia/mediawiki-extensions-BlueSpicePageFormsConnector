@@ -1,3 +1,8 @@
 {
-  "bs-pageformsconnector-desc": "Integrates PageForms extension into BlueSpice"
+	"@metadata": {
+		"authors": [
+			"Dejan Savuljesku"
+		]
+	},
+	"bs-pageformsconnector-desc": "Integrates PageForms extension into BlueSpice"
 }
