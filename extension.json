@@ -9,7 +9,8 @@
 	"requires": {
 		"MediaWiki": ">= 1.35.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 3.3"
+			"BlueSpiceFoundation": ">= 3.3",
+			"PageForms": "*"
 		}
 	},
 	"attributes": {
