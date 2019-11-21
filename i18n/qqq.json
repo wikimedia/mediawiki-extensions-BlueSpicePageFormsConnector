@@ -1,3 +1,8 @@
 {
-  "bs-pageformsconnector-desc": "Extension description"
+	"@metadata": {
+		"authors": [
+			"Patric Wirth"
+		]
+	},
+	"bs-pageformsconnector-desc": "{{desc|name=BlueSpicePageFormsConnector}}"
 }
