@@ -36,6 +36,20 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\PageFormsConnector\\" : "src/"
 	},
+	"ResourceModules": {
+		"ext.bluespice.pageformsconnector.styles": {
+			"styles": [
+				"stylesheets/ext.bluespice.pageformsconnector.less"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpicePageFormsConnector/resources"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "\\BlueSpice\\PageFormsConnector\\Hook\\BeforePageDisplay\\AddModuleStyles::callback"
+	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
 }
