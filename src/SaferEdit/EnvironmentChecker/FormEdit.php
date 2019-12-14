@@ -8,6 +8,11 @@ use SpecialPageFactory;
 
 class FormEdit extends Base {
 
+	/**
+	 *
+	 * @param bool &$result
+	 * @return bool
+	 */
 	public function isEditMode( &$result ) {
 		$action = $this->context->getRequest()->getText( 'action', 'view' );
 
@@ -24,6 +29,11 @@ class FormEdit extends Base {
 		return true;
 	}
 
+	/**
+	 *
+	 * @param bool &$result
+	 * @return bool
+	 */
 	public function shouldShowWarning( &$result ) {
 		$isEdit = false;
 		$this->isEditMode( $isEdit );
@@ -34,6 +44,11 @@ class FormEdit extends Base {
 		return true;
 	}
 
+	/**
+	 *
+	 * @param Title $title
+	 * @return Title
+	 */
 	private function getTitleEditedOverSP( $title = null ) {
 		if ( $title === null ) {
 			$title = $this->context->getTitle();
@@ -44,12 +59,13 @@ class FormEdit extends Base {
 			$specialPageName = array_shift( $bits );
 			if ( $specialPageName ) {
 				$specialTitle = SpecialPageFactory::getTitleForAlias( $specialPageName );
-				if ( !( $specialTitle instanceof Title ) || !$specialTitle->equals( \SpecialPage::getTitleFor( 'FormEdit' ) ) ) {
+				if ( !$specialTitle instanceof Title
+					|| !$specialTitle->equals( \SpecialPage::getTitleFor( 'FormEdit' ) ) ) {
 					return null;
 				}
 				$page = array_pop( $bits );
 				$pageTitle = Title::newFromText( $page );
-				if ( !( $pageTitle instanceof Title ) || !$pageTitle->exists() ) {
+				if ( !$pageTitle instanceof Title || !$pageTitle->exists() ) {
 					return null;
 				}
 				return $pageTitle;
