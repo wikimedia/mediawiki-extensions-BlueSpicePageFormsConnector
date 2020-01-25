@@ -3,8 +3,8 @@
 namespace BlueSpice\PageFormsConnector\SaferEdit\EnvironmentChecker;
 
 use BlueSpice\SaferEdit\EnvironmentChecker\Base;
-use Title;
 use SpecialPageFactory;
+use Title;
 
 class FormEdit extends Base {
 
@@ -46,7 +46,7 @@ class FormEdit extends Base {
 
 	/**
 	 *
-	 * @param Title $title
+	 * @param Title|null $title
 	 * @return Title
 	 */
 	private function getTitleEditedOverSP( $title = null ) {
