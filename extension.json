@@ -10,7 +10,7 @@
 		"MediaWiki": ">= 1.35.0",
 		"extensions": {
 			"BlueSpiceFoundation": ">= 3.3",
-			"Page Forms": "*"
+			"PageForms": "~4.8"
 		}
 	},
 	"attributes": {
