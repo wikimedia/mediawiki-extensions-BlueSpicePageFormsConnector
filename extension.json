@@ -34,7 +34,7 @@
 		]
 	},
 	"AutoloadNamespaces": {
-		"BlueSpice\\PageFormsConnector\\" : "src/"
+		"BlueSpice\\PageFormsConnector\\": "src/"
 	},
 	"ResourceModules": {
 		"ext.bluespice.pageformsconnector.styles": {
