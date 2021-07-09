@@ -1,9 +1,12 @@
 body.mediawiki,
 body.mediawiki.x-body {
-	.mw-widget-dateInputWidget-calendar {
-		z-index: 5 !important;
+	.ui-widget {
+		&.ui-widget-content {
+			&.ui-datepicker {
+				z-index: 5 !important;
+			}
+		}
 	}
-
 	.PF_timepicker {
 		z-index: 5 !important;
 	}
