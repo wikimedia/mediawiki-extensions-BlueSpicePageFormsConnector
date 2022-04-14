@@ -1,4 +1,5 @@
 {
+	"name": "BlueSpicePageFormsConnector",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
