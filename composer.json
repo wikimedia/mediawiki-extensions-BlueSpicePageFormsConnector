@@ -31,5 +31,10 @@
 			"phpcbf"
 		],
 		"phpcs": "phpcs -sp --cache"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
 	}
 }
