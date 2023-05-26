@@ -26,6 +26,13 @@
 			"EnvironmentCheckers": {
 				"formedit": "\\BlueSpice\\PageFormsConnector\\SaferEdit\\EnvironmentChecker\\FormEdit::factory"
 			}
+		},
+		"BlueSpiceDiscovery": {
+			"BreadcrumbDataProviderRegistry": {
+				"form-edit": {
+					"class": "BlueSpice\\PageFormsConnector\\BreadcrumbDataProvider\\FormEditProvider"
+				}
+			}
 		}
 	},
 	"MessagesDirs": {
