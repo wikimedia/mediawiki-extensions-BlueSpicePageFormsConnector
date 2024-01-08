@@ -7,10 +7,10 @@
 	"descriptionmsg": "bs-pageformsconnector-desc",
 	"type": "bluespice",
 	"requires": {
-		"MediaWiki": ">= 1.36.0",
+		"MediaWiki": ">= 1.39.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 4.1",
-			"PageForms": "~5"
+			"BlueSpiceFoundation": ">= 4.3",
+			"PageForms": ">= 5.4"
 		}
 	},
 	"attributes": {
