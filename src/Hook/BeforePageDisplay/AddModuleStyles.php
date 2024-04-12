@@ -9,7 +9,8 @@ class AddModuleStyles extends \BlueSpice\Hook\BeforePageDisplay {
 		if ( $action === 'formedit' ) {
 			return false;
 		}
-		if ( $this->out->getTitle()->isSpecial( 'FormEdit' ) ) {
+		$title = $this->out->getTitle();
+		if ( $title && $title->isSpecial( 'FormEdit' ) ) {
 			return false;
 		}
 
