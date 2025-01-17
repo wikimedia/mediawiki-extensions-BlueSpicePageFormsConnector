@@ -3,7 +3,7 @@
 namespace BlueSpice\PageFormsConnector\SaferEdit\EnvironmentChecker;
 
 use BlueSpice\SaferEdit\EnvironmentChecker\Base;
-use Title;
+use MediaWiki\Title\Title;
 
 class FormEdit extends Base {
 

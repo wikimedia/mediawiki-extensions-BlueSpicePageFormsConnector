@@ -3,7 +3,7 @@
 namespace BlueSpice\PageFormsConnector\BreadcrumbDataProvider;
 
 use BlueSpice\Discovery\BreadcrumbDataProvider\BaseBreadcrumbDataProvider;
-use Title;
+use MediaWiki\Title\Title;
 
 class FormEditProvider extends BaseBreadcrumbDataProvider {
 
