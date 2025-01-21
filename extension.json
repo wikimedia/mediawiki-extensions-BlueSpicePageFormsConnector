@@ -1,16 +1,16 @@
 {
 	"name": "BlueSpicePageFormsConnector",
 	"license-name": "GPL-3.0-only",
-	"version": "4.2.0-alpha",
+	"version": "5.0.0",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePageFormsConnector",
 	"author": "Dejan Savuljesku",
 	"descriptionmsg": "bs-pageformsconnector-desc",
 	"type": "bluespice",
 	"requires": {
-		"MediaWiki": ">= 1.39.0",
+		"MediaWiki": ">= 1.43.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 4.3",
-			"PageForms": ">= 5.4"
+			"BlueSpiceFoundation": ">= 5.0.0",
+			"PageForms": ">= 5.9"
 		}
 	},
 	"attributes": {
