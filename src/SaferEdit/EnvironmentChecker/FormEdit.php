@@ -47,11 +47,14 @@ class FormEdit extends Base {
 	/**
 	 *
 	 * @param Title|null $title
-	 * @return Title
+	 * @return Title|null
 	 */
 	private function getTitleEditedOverSP( $title = null ) {
 		if ( $title === null ) {
 			$title = $this->context->getTitle();
+		}
+		if ( !$title ) {
+			return null;
 		}
 		if ( $title->isSpecialPage() ) {
 			$dbKey = $title->getDBkey();
