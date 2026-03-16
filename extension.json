@@ -55,7 +55,8 @@
 		"remoteExtPath": "BlueSpicePageFormsConnector/resources"
 	},
 	"Hooks": {
-		"BeforePageDisplay": "\\BlueSpice\\PageFormsConnector\\Hook\\BeforePageDisplay\\AddModuleStyles::callback"
+		"BeforePageDisplay": "\\BlueSpice\\PageFormsConnector\\Hook\\BeforePageDisplay\\AddModuleStyles::callback",
+		"SpecialPageBeforeExecute": "\\BlueSpice\\PageFormsConnector\\Hook\\SpecialPageBeforeExecute\\CheckFormEditContext::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
