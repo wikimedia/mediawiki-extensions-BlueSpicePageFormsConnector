@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Suleiman the Magnificent Television"
+			"Suleiman the Magnificent Television",
+			"Tensama0415"
 		]
 	},
-	"bs-pageformsconnector-desc": "BlueSpice에 PageForms 확장 프로그램을 통합합니다"
+	"bs-pageformsconnector-desc": "블루스파이스에 PageForms 확장 프로그램을 통합합니다"
 }
