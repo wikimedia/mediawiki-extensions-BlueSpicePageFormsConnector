@@ -3,9 +3,9 @@
 namespace BlueSpice\PageFormsConnector\Hook\SpecialPageBeforeExecute;
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use PermissionsError;
 use SpecialPage;
-use Title;
 
 /** There is no \BlueSpice\Hook\SpecialPageBeforeExecute */
 class CheckFormEditContext {
