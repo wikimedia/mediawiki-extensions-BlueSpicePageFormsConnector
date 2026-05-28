@@ -56,7 +56,8 @@
 	},
 	"Hooks": {
 		"BeforePageDisplay": "\\BlueSpice\\PageFormsConnector\\Hook\\BeforePageDisplay\\AddModuleStyles::callback",
-		"SpecialPageBeforeExecute": "\\BlueSpice\\PageFormsConnector\\Hook\\SpecialPageBeforeExecute\\CheckFormEditContext::callback"
+		"SpecialPageBeforeExecute": "\\BlueSpice\\PageFormsConnector\\Hook\\SpecialPageBeforeExecute\\CheckFormEditContext::callback",
+		"PageForms::CreateFormField": "\\BlueSpice\\PageFormsConnector\\Hook\\PageFormsCreateFormField\\AddToolbarOnTop::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
