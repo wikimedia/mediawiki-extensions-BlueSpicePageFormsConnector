@@ -9,7 +9,6 @@ use MediaWiki\Title\Title;
 class FormEdit extends Base {
 
 	/**
-	 *
 	 * @param bool &$result
 	 * @return bool
 	 */
@@ -30,7 +29,6 @@ class FormEdit extends Base {
 	}
 
 	/**
-	 *
 	 * @param bool &$result
 	 * @return bool
 	 */
@@ -45,7 +43,6 @@ class FormEdit extends Base {
 	}
 
 	/**
-	 *
 	 * @param Title|null $title
 	 * @return Title|null
 	 */
