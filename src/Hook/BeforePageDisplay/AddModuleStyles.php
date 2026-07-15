@@ -4,6 +4,9 @@ namespace BlueSpice\PageFormsConnector\Hook\BeforePageDisplay;
 
 class AddModuleStyles extends \BlueSpice\Hook\BeforePageDisplay {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function skipProcessing() {
 		$action = $this->out->getRequest()->getText( 'action', 'view' );
 		if ( $action === 'formedit' ) {
@@ -17,6 +20,9 @@ class AddModuleStyles extends \BlueSpice\Hook\BeforePageDisplay {
 		return true;
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$this->out->addModuleStyles( 'ext.bluespice.pageformsconnector.styles' );
 
